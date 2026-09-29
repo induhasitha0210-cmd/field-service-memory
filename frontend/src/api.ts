@@ -1,6 +1,6 @@
 import type { AgentContext, DemoResult, MemoryItem, Equipment, ServiceRequest, ServiceRecord, Customer, Site, Technician, Insight, MemoryStats, TimelineEvent } from './types';
 
-const BASE = '/api';
+const BASE = 'https://field-service-memory-api.onrender.com/api';
 
 async function req<T>(url: string, options?: RequestInit): Promise<T> {
   const res = await fetch(BASE + url, options);
